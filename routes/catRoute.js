@@ -7,6 +7,7 @@ const {cat_list_get, cat_get, cat_post, cat_put, cat_delete} = require(
 const router = express.Router();
 
 router.route('/').
+
 get(cat_list_get).
 post(upload.single('cat'), cat_post).
 put(cat_put);

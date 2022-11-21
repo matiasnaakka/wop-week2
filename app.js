@@ -12,6 +12,11 @@ app.use(express.json()); // for parsing application/json
 app.use(express.urlencoded({extended: true})); // for parsing application/x-www-form-urlencoded
 app.use(express.static('uploads'));
 
+
+app.get('/matt/:id', (req, res) => {
+
+})
+
 app.use('/cat', catRoute);
 app.use('/user', userRoute);
 
